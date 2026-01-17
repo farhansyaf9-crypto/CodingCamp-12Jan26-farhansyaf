@@ -3,9 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portofolio Farhan</title>
+   
+    <link rel="stylesheet" href="css\style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
 <body>
+    <header class="main-header p-[8px]">
     
+        <div class="logo"></div>
+        
+        <nav class="flex">
+            <a class="border p-2 rounded" href="#">Home</a>
+            <a class="border p-2 rounded" href="#">Portofolio</a>
+            <a class="border p-2 rounded" href="#">Our Profile</a>
+            <a class="border p-2 rounded" href="#">Message Us</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+
+        <section id="home-page" class="min-h-[500px] text-center content-center">
+            <h2 class="text-xl font-bold" id="welcome-speech">Welcome to Our Website</h2>
+            <p class="mt-2">Pondok Pesantren Markazul Qur’an Bogor adalah sebuah lembaga pendidikan formal yang mengusung teori dan praktik tepat. Sekolah yang memberikan kenyamanan proses belajar mengajar bagi seluruh peserta didik dan dan pendidik.</p>
+            <div class="mask-t-from-50% bg-[url(MQ.jpg)] bg-cover bg-center h-64 w-full"></div>
+        </section>
+
+        <hr>
+
+        <section id="portofolio-page" class="min-h-[500px] text-center content-center">
+            <h2 class="text-xl font-bold">Our Portofolio</h2>
+            <p class="mt-2">Dokumentasi Kegiatan Santri Pondok Pesantren Markazul Qur'an</p>
+            <div class="grid grid-cols-3 gap-4 mt-4 mx-8">
+                <div class="bg-[url(01.jpg)] bg-cover bg-center h-48 w-full"></div>
+                <div class="bg-[url(02.jpg)] bg-cover bg-center h-48 w-full"></div>
+                <div class="bg-[url(03.jpg)] bg-cover bg-center h-48 w-full"></div>
+        </section>
+
+        <hr>
+
+        <section id="our-profile-page" class="min-h-[500px] text-center content-center">
+            <h2 class="text-xl font-bold">Tentang Kami</h2>
+            <p class="mt-2">Markazul Qur’an merupakan Pondok Pesantren Modern yang terletak di Bogor yang pendidikan formalnya terdiri dari Madrasah Tsanawiyah (MTs) dan Madrasah Aliyah (MA). Dimana para santrinya diharapkan menjadi Hafizh Al Qur’an. Selain tahfizh, santri pun dibekali dengan beberapa kompetensi, diantaranya kompetensi bahasa (Arab & Inggris) kemampuan akademik lainnya yang berafiliasi kepada Kementrian Agama.</p>
+        </section>
+        
+
+        <hr>
+
+        <section id="message-us-page" class="min-h-[500px] mx-8">
+            <header>
+                <h2 class="text-xl font-bold">Message Us</h2>
+                <p class="mt-2">Jika ada pertanyaan yang ingin ditanyakan bisa dikirim melalui kolom komentar atau hubungi nomer dibawah ini.</p>
+            </header>
+
+            <form>
+                <div class="mb-4">
+                    <label class="block mb-2" for="name">Name</label>
+                    <input class="w-full p-2 border rounded" type="text" id="name" name="name" rows="1">
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-2" for="email">Email</label>
+                    <input class="w-full p-2 border rounded" type="text" id="email" name="email" rows="1">
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-2" for="message">Message</label>
+                    <input class="w-full p-2 border rounded" type="text" id="message" name="message" rows="1">
+                </div>
+                <button class="px-4 py-2 bg-blue-500 text-white rounded" type="button">Send Message</button>
+            </form>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p class="text-center p-4 bg-gray-200">© 2026 Pondok Pesantren Markazul Qur'an. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
